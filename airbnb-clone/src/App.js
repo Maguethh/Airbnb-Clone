@@ -6,6 +6,15 @@ import Appart from "./Pages/AppartPage"; // Page de logement avec l'id
 import NotFound from "./Pages/NotFound.jsx"; // Page non trouvée
 import Login from "./Pages/LoginPage"; // Page de login
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faBars,
+  faGlobe,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(faBars, faGlobe, faMagnifyingGlass); // Ajoutez les icônes à la bibliothèque
+
 const App = () => {
   return (
     <Router>
