@@ -9,11 +9,24 @@ import Login from "./Pages/LoginPage"; // Page de login
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBars,
+  faBatteryEmpty,
   faGlobe,
+  faHouse,
   faMagnifyingGlass,
+  faMountain,
+  faSliders,
+  faUmbrellaBeach,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faGlobe, faMagnifyingGlass); // Ajoutez les icônes à la bibliothèque
+library.add(
+  faBars,
+  faGlobe,
+  faMagnifyingGlass,
+  faSliders,
+  faMountain,
+  faUmbrellaBeach,
+  faHouse
+); // Ajoutez les icônes à la bibliothèque
 
 const App = () => {
   return (

@@ -1,0 +1,69 @@
+.FilterBar{
+    width: 85%;
+    display: flex;
+    height: 78px;
+    justify-content: space-evenly;
+}
+
+.FilterLabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.FilterBarLogo{
+    font-size: 23px;
+    color: #ff384f;
+}
+
+.FilterBarText {
+    font-size: 14px;
+}
+
+.Filters{
+    display: flex;
+    width: 98%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.FilterSetting{
+    border: solid 1px gray;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.FilterSearch{
+    display: flex;
+}
+
+.FilterSettingLogo{
+    font-size: 18px;
+}
+
+.FilterSettingText{
+    font-size: 15px;
+}
+
+.FilterSearchLabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.FilterSearchLogo{
+    font-size: 23px;
+    color: gray;
+}
+
+.FilterSearchText{
+    font-size: 15px;
+}

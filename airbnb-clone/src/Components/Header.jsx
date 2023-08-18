@@ -7,7 +7,9 @@ import NoUserLogo from "../Images/NoUserLogo.svg"
 
 import '../ComponentsStyles/Header.css'; // Import du fichier de style
 
-const Header = () => {
+
+
+function Header() {
   return (
     <header>
       <div className="NavBar">
@@ -15,9 +17,9 @@ const Header = () => {
       <img src={LogoSVG} className="AirbnbLogo" alt="Mon Logo" />
 
         <ul className="SearchBar">
-        <li className="DestinationButton"> ---- </li>
-        <li className="DateButton">-- / -- -----</li>
-        <li className="TravellersButton">-- pers</li>
+        <li className="DestinationButton">Destination</li>
+        <li className="DateButton">Jour / Mois / Année</li>
+        <li className="TravellersButton">Nombre de personne</li>
         <div className="MagnifyingGlass"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></div>
         </ul>
     <div className="NavRight">
