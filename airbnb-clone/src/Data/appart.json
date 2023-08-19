@@ -1,0 +1,93 @@
+[
+    {
+      "id": "e8d4f66",
+      "title": "Appartement Moderne",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+      "description": "Un bel appartement moderne avec vue sur la ville.",
+      "location": "Mannevile-La-Raoult, France",
+      "type": "Particulier",
+      "availableTime": "31 août - 18 Octobre",
+      "price": "387€"
+    },
+    {
+      "id": "a2b1c3d",
+      "title": "Appartement de Plage",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
+      "description": "Un charmant appartement proche de la plage.",
+      "location": "Plageville, France",
+      "type": "Vacances",
+      "availableTime": "15 juillet - 30 août",
+      "price": "250€"
+    },
+    {
+      "id": "f9e8d7c",
+      "title": "Appartement en Montagne",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+      "description": "Un appartement confortable au cœur des montagnes.",
+      "location": "Montagneton, France",
+      "type": "Escapade",
+      "availableTime": "1 septembre - 15 décembre",
+      "price": "300€"
+    },
+    {
+      "id": "b3a4c2d",
+      "title": "Studio Urbain",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
+      "description": "Un studio moderne au cœur de la ville.",
+      "location": "Villeville, France",
+      "type": "Urbain",
+      "availableTime": "Toute l'année",
+      "price": "150€"
+    },
+    {
+      "id": "c7e6d5a",
+      "title": "Maison de Campagne",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+      "description": "Une charmante maison de campagne entourée de verdure.",
+      "location": "Campagne-sur-Vert, France",
+      "type": "Campagne",
+      "availableTime": "1 avril - 30 septembre",
+      "price": "280€"
+    },
+    {
+      "id": "d1b2c3a",
+      "title": "Appartement Cosy",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
+      "description": "Un appartement confortable et chaleureux pour se détendre.",
+      "location": "Détenteville, France",
+      "type": "Détente",
+      "availableTime": "Toute l'année",
+      "price": "180€"
+    },
+    {
+      "id": "e4f5d6c",
+      "title": "Duplex Élégant",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-1.jpg",
+      "description": "Un duplex élégant avec une vue panoramique.",
+      "location": "Panorama City, France",
+      "type": "Luxe",
+      "availableTime": "1 juin - 31 août",
+      "price": "500€"
+    },
+    {
+      "id": "c9b8a7e",
+      "title": "Appartement Historique",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
+      "description": "Un appartement chargé d'histoire au cœur du centre-ville.",
+      "location": "Histoireville, France",
+      "type": "Historique",
+      "availableTime": "Toute l'année",
+      "price": "220€"
+    },
+    {
+      "id": "f6e5d4b",
+      "title": "Retraite Paisible",
+      "image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-7-1.jpg",
+      "description": "Une retraite paisible pour se ressourcer en pleine nature.",
+      "location": "Sérénité, France",
+      "type": "Nature",
+      "availableTime": "15 septembre - 15 novembre",
+      "price": "320€"
+    }
+  ]
+  

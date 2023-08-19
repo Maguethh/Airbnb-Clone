@@ -15,6 +15,7 @@ import {
   faMagnifyingGlass,
   faMountain,
   faSliders,
+  faStar,
   faUmbrellaBeach,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -23,6 +24,7 @@ library.add(
   faGlobe,
   faMagnifyingGlass,
   faSliders,
+  faStar,
   faMountain,
   faUmbrellaBeach,
   faHouse
@@ -33,7 +35,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/appart" element={<Appart />} />
+        <Route path="/appart/:id" element={<Appart />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
       </Routes>

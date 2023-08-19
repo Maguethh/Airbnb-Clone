@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 
 import Header from "../Components/Header"
 import PlaceFilter from "../Components/PlaceFilter"
+import AppartModule from "../Components/AppartModule"
+import Footer from "../Components/Footer"
 
 const Home = () => {
   return (
     <div>
        <Header />
        <PlaceFilter />
-      <h1>Bienvenue sur notre Plateforme</h1>
-      <p>Explorez notre sélection d'appartements incroyables.</p>
-      <Link to="/appart">Voir les Appartements</Link>
+       <AppartModule />
+      <Footer/>
     </div>
   );
 }

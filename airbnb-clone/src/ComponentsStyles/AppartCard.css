@@ -1,0 +1,36 @@
+
+.AppartBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+    
+.AppartImg{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+}
+    
+.AppartBottomLeft{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: none;
+    padding: 0px;
+    height: 100%;
+}
+    
+.AppartBottomRight{
+    width: 20%;
+}
+
+
+
+.AppartLocation,
+.AppartType,
+.AppartAvailableTime,
+.AppartPrice {
+  margin: 0;}
+
