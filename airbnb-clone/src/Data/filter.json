@@ -1,0 +1,132 @@
+[
+    {
+      "icon": "fa-mountain",
+      "text": "À la montagne",
+      "locationType": "mountain"
+    },
+    {
+      "icon": "fa-umbrella-beach",
+      "text": "À la plage",
+      "locationType": "beach"
+    },
+    {
+      "icon": "fa-city",
+      "text": "En ville",
+      "locationType": "city"
+    },
+    {
+      "icon": "fa-skiing",
+      "text": "Au ski",
+      "locationType": "ski"
+    },
+    {
+      "icon": "fa-campground",
+      "text": "Camping",
+      "locationType": "camping"
+    },
+    {
+      "icon": "fa-futbol",
+      "text": "Espace de jeu",
+      "locationType": "playground"
+    },
+    {
+      "icon": "fa-snowboarding",
+      "text": "Snowboard",
+      "locationType": "snowboard"
+    },
+    {
+      "icon": "fa-swimmer",
+      "text": "Bord de lac",
+      "locationType": "lake"
+    },
+    {
+      "icon": "fa-sun",
+      "text": "Soleil",
+      "locationType": "sunny"
+    },
+    {
+      "icon": "fa-hiking",
+      "text": "Randonnée",
+      "locationType": "hiking"
+    },
+    {
+      "icon": "fa-bicycle",
+      "text": "Cyclisme",
+      "locationType": "cycling"
+    },
+    {
+      "icon": "fa-binoculars",
+      "text": "Observation",
+      "locationType": "observation"
+    },
+    {
+      "icon": "fa-golf-ball",
+      "text": "Golf",
+      "locationType": "golf"
+    },
+    {
+      "icon": "fa-horse",
+      "text": "Équitation",
+      "locationType": "horseback"
+    },
+    {
+      "icon": "fa-tent",
+      "text": "Camp en forêt",
+      "locationType": "forest-camping"
+    },
+    {
+      "icon": "fa-wind",
+      "text": "Vent",
+      "locationType": "windy"
+    },
+    {
+      "icon": "fa-car",
+      "text": "Route",
+      "locationType": "road"
+    },
+    {
+      "icon": "fa-ship",
+      "text": "En mer",
+      "locationType": "sea"
+    },
+    {
+      "icon": "fa-theater-masks",
+      "text": "Théâtre",
+      "locationType": "theater"
+    },
+    {
+      "icon": "fa-tree",
+      "text": "Nature",
+      "locationType": "nature"
+    },
+    {
+      "icon": "fa-glass-cheers",
+      "text": "Sortie",
+      "locationType": "outing"
+    },
+    {
+      "icon": "fa-music",
+      "text": "Concert",
+      "locationType": "concert"
+    },
+    {
+      "icon": "fa-monument",
+      "text": "Monument",
+      "locationType": "monument"
+    },
+    {
+      "icon": "fa-briefcase",
+      "text": "Affaires",
+      "locationType": "business"
+    },
+    {
+      "icon": "fa-shopping-cart",
+      "text": "Shopping",
+      "locationType": "shopping"
+    },
+    {
+      "icon": "fa-paw",
+      "text": "Animaux",
+      "locationType": "pets"
+    }
+]

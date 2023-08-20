@@ -1,16 +1,28 @@
+.Appart{
+    display: flex;
+    flex-direction: column;
+    height: 337px;
+}
+
+.AppartTop{
+    height: 70%;
+    width: 100%;
+}
 
 .AppartBottom{
+    height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     
 }
     
 .AppartImg{
     object-fit: cover;
     width: 100%;
-    height: 80%;
-    border-radius: 30px;
+    height: 100%;
+    border-radius: 10px;
 }
     
 .AppartBottomLeft{
@@ -34,3 +46,30 @@
 .AppartPrice {
   margin: 0;}
 
+.AppartLocation{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.AppartType{
+    font-size: 12px;
+    color: gray;
+    padding-top: 5px;
+}
+
+.AppartAvailableTime{
+    font-size: 12px;
+    color: gray;
+}
+
+.AppartPrice{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.StarRating{
+    font-size: 15px;
+    font-weight: bold;
+}

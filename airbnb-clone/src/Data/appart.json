@@ -7,7 +7,8 @@
       "location": "Mannevile-La-Raoult, France",
       "type": "Particulier",
       "availableTime": "31 août - 18 Octobre",
-      "price": "387€"
+      "price": "387€",
+      "rating": "4,95"
     },
     {
       "id": "a2b1c3d",
@@ -17,7 +18,8 @@
       "location": "Plageville, France",
       "type": "Vacances",
       "availableTime": "15 juillet - 30 août",
-      "price": "250€"
+      "price": "250€",
+      "rating": "5"
     },
     {
       "id": "f9e8d7c",
@@ -27,7 +29,8 @@
       "location": "Montagneton, France",
       "type": "Escapade",
       "availableTime": "1 septembre - 15 décembre",
-      "price": "300€"
+      "price": "300€",
+      "rating": "3,46"
     },
     {
       "id": "b3a4c2d",
@@ -37,7 +40,9 @@
       "location": "Villeville, France",
       "type": "Urbain",
       "availableTime": "Toute l'année",
-      "price": "150€"
+      "price": "150€",
+      "rating": "2,86"
+      
     },
     {
       "id": "c7e6d5a",
@@ -47,7 +52,8 @@
       "location": "Campagne-sur-Vert, France",
       "type": "Campagne",
       "availableTime": "1 avril - 30 septembre",
-      "price": "280€"
+      "price": "280€",
+      "rating": "4,92"
     },
     {
       "id": "d1b2c3a",
@@ -57,7 +63,8 @@
       "location": "Détenteville, France",
       "type": "Détente",
       "availableTime": "Toute l'année",
-      "price": "180€"
+      "price": "180€",
+      "rating": "5"
     },
     {
       "id": "e4f5d6c",
@@ -67,7 +74,8 @@
       "location": "Panorama City, France",
       "type": "Luxe",
       "availableTime": "1 juin - 31 août",
-      "price": "500€"
+      "price": "500€",
+      "rating": "2,41"
     },
     {
       "id": "c9b8a7e",
@@ -77,7 +85,8 @@
       "location": "Histoireville, France",
       "type": "Historique",
       "availableTime": "Toute l'année",
-      "price": "220€"
+      "price": "220€",
+      "rating": "5"
     },
     {
       "id": "f6e5d4b",
@@ -87,7 +96,8 @@
       "location": "Sérénité, France",
       "type": "Nature",
       "availableTime": "15 septembre - 15 novembre",
-      "price": "320€"
+      "price": "320€",
+      "rating": "1,63"
     }
   ]
   

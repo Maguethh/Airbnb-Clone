@@ -1,51 +1,82 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import "../ComponentsStyles/PlaceFilter.css";  // Import du fichier de style
-
+import FilterData from "../Data/filter.json";
+import "../ComponentsStyles/PlaceFilter.css";
 
 function PlaceFilter() {
-    return(
-        <div className="Filters">
+  const numVisibleFilters = 13; // Nombre de filtres visibles à la fois
+  const totalFilters = FilterData.length;
+  const [startIndex, setStartIndex] = useState(0);
 
-        <div className="FilterSearch">
-        <label className="FilterSearchLabel"><FontAwesomeIcon icon="fa-solid fa-house" className="FilterSearchLogo"/><span className="FilterSearchText">Votre recherche</span></label>
-        </div>
+  const handleRightArrowClick = () => {
+    if (startIndex + numVisibleFilters < totalFilters) {
+      setStartIndex((prevIndex) => prevIndex + numVisibleFilters);
+    }
+  };
 
-        <div className="FilterBar">
+  const handleLeftArrowClick = () => {
+    if (startIndex - numVisibleFilters >= 0) {
+      setStartIndex((prevIndex) => prevIndex - numVisibleFilters);
+    }
+  };
 
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-mountain" className="FilterBarLogo"/><span className="FilterBarText">À la montagne</span></label>
+  const visibleFilters = FilterData.slice(
+    startIndex,
+    startIndex + numVisibleFilters
+  );
 
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-umbrella-beach" className="FilterBarLogo"/><span className="FilterBarText">À la plage</span></label>
+  return (
+    <div className="Filters">
+      <div className="FilterSearch">
+        <label className="FilterSearchLabel">
+          <FontAwesomeIcon
+            icon={["fas", "fa-house"]}
+            className="FilterSearchLogo"
+          />
+          <span className="FilterSearchText">Votre recherche</span>
+        </label>
+      </div>
 
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-mountain" className="FilterBarLogo"/><span className="FilterBarText">À la montagne</span></label>
+      <div className="FilterBar scrollable ">
+        {visibleFilters.map((filter, index) => (
+          <label className="FilterLabel" key={index}>
+            <FontAwesomeIcon
+              icon={["fas", filter.icon]}
+              className="FilterBarLogo"
+            />
+            <span className="FilterBarText">{filter.text}</span>
+          </label>
+        ))}
+      </div>
+      <div className="FilterArrow">
+      {startIndex > 0 && (
+          <button className="ArrowButton" onClick={handleLeftArrowClick}>
+            <FontAwesomeIcon
+              icon={["fas", "fa-chevron-left"]}
+              className="ArrowIcon"
+            />
+          </button>
+        )}
+        {startIndex + numVisibleFilters < totalFilters && (
+          <button className="ArrowButton" onClick={handleRightArrowClick}>
+            <FontAwesomeIcon
+              icon={["fas", "fa-chevron-right"]}
+              className="ArrowIcon"
+            />
+          </button>
+        )}
+      </div>
 
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-umbrella-beach" className="FilterBarLogo"/><span className="FilterBarText">À la plage</span></label>
-
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-mountain" className="FilterBarLogo"/><span className="FilterBarText">À la montagne</span></label>
-
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-umbrella-beach" className="FilterBarLogo"/><span className="FilterBarText">À la plage</span></label>
-
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-mountain" className="FilterBarLogo"/><span className="FilterBarText">À la montagne</span></label>
-
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-umbrella-beach" className="FilterBarLogo"/><span className="FilterBarText">À la plage</span></label>
-
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-mountain" className="FilterBarLogo"/><span className="FilterBarText">À la montagne</span></label>
-
-            <label className="FilterLabel"><FontAwesomeIcon icon="fa-solid fa-umbrella-beach" className="FilterBarLogo"/><span className="FilterBarText">À la plage</span></label>
-
-        </div>
-
-        <div className="FilterSetting">
-        <FontAwesomeIcon icon="fa-solid fa-sliders" className="FilterSettingLogo"/>
+      <div className="FilterSetting">
+        <FontAwesomeIcon
+          icon={["fas", "fa-sliders"]}
+          className="FilterSettingLogo"
+        />
         <span className="FilterSettingText">Filtres</span>
-        </div>
-
-        </div>
-        
-    )
+      </div>
+    </div>
+  );
 }
 
 export default PlaceFilter;

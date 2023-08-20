@@ -1,35 +1,65 @@
-.FilterBar{
-    width: 85%;
-    display: flex;
-    height: 78px;
-    justify-content: space-evenly;
-}
 
-.FilterLabel{
+  .ArrowButton{
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .FilterArrow{
+    width: 5%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .FilterBar {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 10px;
+    align-items: center;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+    width: 80%;
+}
+  
+  .FilterBar.scroll-right {
+    transform: translateX(-100%);
+  }
+  
+  .FilterBar.scroll-left {
+    transform: translateX(0);
+  }
+  
+  
+  .FilterLabel {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-
-
-.FilterBarLogo{
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .FilterBarLogo {
     font-size: 23px;
     color: #ff384f;
-}
-
-.FilterBarText {
+  }
+  
+  .FilterBarText {
     font-size: 14px;
-}
-
-.Filters{
+    text-align: center;
+  }
+  
+  .Filters {
     display: flex;
-    width: 98%;
     justify-content: space-evenly;
     margin: auto;
-}
-
-.FilterSetting{
+    width: 100%;
+  }
+  
+  .FilterSetting {
     border: solid 1px gray;
     display: flex;
     justify-content: space-evenly;
@@ -39,31 +69,38 @@
     margin: auto;
     border-radius: 30px;
     gap: 10px;
-}
-
-.FilterSearch{
+    width: 5%;
+  }
+  
+  .FilterSearch {
     display: flex;
-}
-
-.FilterSettingLogo{
+    width: 10%;
+    justify-content: center;
+  }
+  
+  .FilterSettingLogo {
     font-size: 18px;
-}
-
-.FilterSettingText{
+  }
+  
+  .FilterSettingText {
     font-size: 15px;
-}
-
-.FilterSearchLabel{
+  }
+  
+  .FilterSearchLabel {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.FilterSearchLogo{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .FilterSearchLogo {
     font-size: 23px;
     color: gray;
-}
-
-.FilterSearchText{
+  }
+  
+  .FilterSearchText {
     font-size: 15px;
-}
+  }
+  
+  

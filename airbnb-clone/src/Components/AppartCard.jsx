@@ -7,7 +7,11 @@ function AppartCard({ appart }){
   return (
     <div className="Appart">
 
-      <img src={appart.image} alt={appart.title} className='AppartImg' />
+      <div className="AppartTop">
+
+        <img src={appart.image} alt={appart.title} className='AppartImg' />
+
+      </div>
 
       <div className="AppartBottom">
 
@@ -19,9 +23,9 @@ function AppartCard({ appart }){
         </div>
         
         <div className="AppartBottomRight">
-          <FontAwesomeIcon icon={['fas', 'star']} />
+          <p className='StarRating'><FontAwesomeIcon icon={['fas', 'star']} /> {appart.rating}</p>
         </div>
-      
+  
       </div>
     
     </div>

@@ -1,14 +1,16 @@
 .AppartList {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 3 colonnes égales */
-    gap: 20px; /* Espace entre les cartes */
-    margin: auto;
+    grid-template-columns: repeat(6, 1fr); /* 3 colonnes égales */
+    gap: 25px; /* Espace entre les cartes */
+    padding-top: 25px;
     grid-row-gap: 40px;
-    width: 95%
+    width: 97%;
+    margin:auto;
   }
   
 
-.Appart {
-    /* Vos styles pour chaque carte d'appartement ici */
-}
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   
