@@ -9,13 +9,13 @@ function PlaceFilter() {
   const totalFilters = FilterData.length;
   const [startIndex, setStartIndex] = useState(0);
 
-  const handleRightArrowClick = () => {
+  function handleRightArrowClick() {
     if (startIndex + numVisibleFilters < totalFilters) {
       setStartIndex((prevIndex) => prevIndex + numVisibleFilters);
     }
   };
 
-  const handleLeftArrowClick = () => {
+  function handleLeftArrowClick() {
     if (startIndex - numVisibleFilters >= 0) {
       setStartIndex((prevIndex) => prevIndex - numVisibleFilters);
     }
