@@ -9,9 +9,7 @@ app.get("/", (req, res) => {
   res.send("Bienvenue sur le serveur de l'application Airbnb Clone !");
 });
 
-const authRoutes = require("./routes/auth");
-
-// ...
+const authRoutes = require("./routes/user");
 
 app.use("/auth", authRoutes);
 

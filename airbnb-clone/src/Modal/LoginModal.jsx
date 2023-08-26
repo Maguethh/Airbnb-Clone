@@ -1,43 +1,54 @@
-import React, { useState } from "react";
+import React from "react";
 
-import "../ModalStyles/LoginModal.css"
+import "../ModalStyles/LoginModal.css";
 
-const LoginModal = ({ isOpen, onClose, onLogin }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+function LoginModal() {
 
   const handleLogin = () => {
-    // Appeler la fonction onLogin avec les informations d'identification
-    onLogin({ email, password });
+    console.log("Connexion");
+  };
+
+  const handleSignup = () => {
+    console.log("Inscription");
   };
 
   return (
-    <div className={`modal ${isOpen ? "open" : ""}`}>
-      <div className="modal-content">
-        <h2>Connexion</h2>
-        <div className="input-group">
-          <label htmlFor="email">Adresse e-mail:</label>
+    <div>
+      <div className="Backdrop"></div>
+
+      <div className="LoginModal">
+        <p className="LoginTitle">Connexion ou inscription</p>
+        <div className="LoginForm">
           <input
             type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name="Adresse mail"
+            className="LoginInput"
+            id="mail-input"
+            placeholder="Adresse mail"
           />
-        </div>
-        <div className="input-group">
-          <label htmlFor="password">Mot de passe:</label>
           <input
             type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            name="Mot de passe"
+            className="LoginInput"
+            id="password-input"
+            placeholder="Mot de passe"
+          />
+          <input
+            type="submit"
+            className="SubmitButton"
+            value="Connexion"
+            onClick={handleLogin}
+          />
+          <input
+            type="submit"
+            className="SubmitButton"
+            value="Inscription"
+            onClick={handleSignup}
           />
         </div>
-        <button onClick={handleLogin}>Se connecter</button>
-        <button onClick={onClose}>Fermer</button>
       </div>
     </div>
   );
-};
+}
 
 export default LoginModal;
