@@ -97,6 +97,10 @@ padding-left: 25px;
     border-radius: 60px;
 }
 
+.User {
+    cursor: pointer;
+}
+
 .UserBars {
     background-color: white;
     font-size: 18px;

@@ -1,15 +1,27 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LogoSVG from "../Images/Airbnb_Logo.svg"
 import NoUserLogo from "../Images/NoUserLogo.svg"
 
+import LoginModal from "../Modal/LoginModal";
+import UserModal from "../Modal/UserModal"
+
 import '../ComponentsStyles/Header.css'; // Import du fichier de style
 
 
 
 function Header() {
+
+  const [profileModalVisibility, setProfileModalVisibility] = useState(false)
+
+  const handleToggleProfileModal = () => {
+    setProfileModalVisibility(!profileModalVisibility);
+    console.log("Ouverture de la modale User")
+  }
+
   return (
     <header>
       <div className="NavBar">
@@ -32,14 +44,25 @@ function Header() {
         <div className="Region">
         <button className="RegionButton"><FontAwesomeIcon icon="fa-solid fa-globe" /></button>
         </div>
+        
+        <div className="UserModalContainer" onClick = {handleToggleProfileModal}> {/* Ouverture / Fermeture de la modale User selon son état à l'aide de la fonction handleToggleProfileModal */}
+
         <div className="User">
         <button className="UserBars"><FontAwesomeIcon icon="fa-solid fa-bars" /></button>
         <img src={NoUserLogo} className="UserPicture" alt="Photo d'utilisateur non renseignée" />
         </div>
 
+        <div>
+    </div>
+
+        </div>
     </div>
 
       </div>
+      
+      {profileModalVisibility && (
+        <UserModal onClose={handleToggleProfileModal}/>
+      )}
     </header>
   );
 }

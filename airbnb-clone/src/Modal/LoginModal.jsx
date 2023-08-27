@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from "react";
+
+import validator from 'validator';
+  
+
 import "../ModalStyles/LoginModal.css";
 
-function LoginModal() {
+function LoginModal({onClose}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleCloseModal = () => {
+    onClose();
+  }
+
   const handleLogin = async () => {
-    try {
+    try { 
       const response = await fetch("http://localhost:4000/api/auth/login", {
         method: "POST",
         headers: {
@@ -18,6 +26,8 @@ function LoginModal() {
       const data = await response.json();
       if (response.ok) {
         setMessage(data.message);
+        localStorage.setItem("token", data.token);
+        onClose(); 
       } else {
         setMessage(data.error);
       }
@@ -27,6 +37,11 @@ function LoginModal() {
   };
 
   const handleSignup = async () => {
+
+    if (!validator.isEmail(email)) {
+      setMessage("Veuillez entrer une adresse e-mail valide.");
+      return;
+    }
     try {
       const response = await fetch("http://localhost:4000/api/auth/signup", {
         method: "POST",
@@ -38,17 +53,19 @@ function LoginModal() {
       const data = await response.json();
       if (response.ok) {
         setMessage(data.message);
+        onClose();
       } else {
-        setMessage(data.error);
+        setMessage(data.error.message);
       }
     } catch (error) {
       console.error("Erreur lors de l'inscription:", error);
     }
   };
 
+
   return (
     <div>
-      <div className="Backdrop"></div>
+      <div className="Backdrop" onClick={onClose}></div>
 
       <div className="LoginModal">
         <p className="LoginTitle">Connexion ou inscription</p>

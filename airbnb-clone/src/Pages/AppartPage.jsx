@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import AppartmentData from "../Data/appart.json"
 
 import Header from "../Components/Header"
+import MapComponent from '../Components/MapComponent';
 
 function Appart() {
   const { id } = useParams(); // Utilisation de la déstructuration pour extraire la valeur de l'ID
@@ -19,7 +20,9 @@ function Appart() {
       <h2>{selectedAppart.title}</h2>
       <img src={selectedAppart.image} alt={selectedAppart.description} />
       <p>{selectedAppart.description}</p>
-
+    <div>
+      <MapComponent />
+    </div>
     </div>
   );
 }

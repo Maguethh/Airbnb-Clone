@@ -24,7 +24,6 @@
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 9;
 
-    display: none;
 }
 
 .LoginTitle{
@@ -60,4 +59,8 @@
     font-weight: bold;
     text-align: center;
     padding: 5px;
+}
+
+.Message {
+    color: red;
 }

@@ -1,0 +1,35 @@
+.UserModal {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px rgb(192, 192, 192);
+    background-color: white;
+    position: fixed;
+    right: 0;
+
+
+}
+
+.UserModalButton {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+.UserModalButton:hover {
+    background: rgb(240, 240, 240);
+    transition: 0.4s;
+}
+
+.UserModalContainerTop {
+    height: 50%;
+}
+
+.UserModalContainerBottom {
+    height: 50%;
+}
