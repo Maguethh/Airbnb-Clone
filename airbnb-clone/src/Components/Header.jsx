@@ -25,8 +25,11 @@ function Header() {
   return (
     <header>
       <div className="NavBar">
-
-      <img src={LogoSVG} className="AirbnbLogo" alt="Mon Logo" />
+      <div>
+      <Link to="/">
+        <img src={LogoSVG} className="AirbnbLogo" alt="Mon Logo" />
+      </Link>
+    </div>
 
         <ul className="SearchBar">
         <li className="DestinationButton">Destination</li>

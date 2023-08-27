@@ -43,6 +43,7 @@ import {
   faPaw,
   faChevronLeft,
   faChevronRight,
+  faEarthAmericas,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -79,7 +80,8 @@ library.add(
   faShoppingCart,
   faPaw,
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
+  faEarthAmericas
 ); // Ajoutez les icônes à la bibliothèque
 
 const App = () => {

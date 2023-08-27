@@ -5,21 +5,31 @@ import FilterData from "../Data/filter.json";
 import "../ComponentsStyles/PlaceFilter.css";
 
 function PlaceFilter() {
-  const numVisibleFilters = 13; // Nombre de filtres visibles à la fois
+  const numVisibleFilters = 13;
   const totalFilters = FilterData.length;
   const [startIndex, setStartIndex] = useState(0);
+  const [isLeftArrowClicked, setIsLeftArrowClicked] = useState(false);
+  const [isRightArrowClicked, setIsRightArrowClicked] = useState(false);
 
   function handleRightArrowClick() {
     if (startIndex + numVisibleFilters < totalFilters) {
-      setStartIndex((prevIndex) => prevIndex + numVisibleFilters);
+      setIsRightArrowClicked(true);
+      setTimeout(() => {
+        setStartIndex((prevIndex) => prevIndex + numVisibleFilters);
+        setIsRightArrowClicked(false);
+      }, 300);
     }
-  };
+  }
 
   function handleLeftArrowClick() {
     if (startIndex - numVisibleFilters >= 0) {
-      setStartIndex((prevIndex) => prevIndex - numVisibleFilters);
+      setIsLeftArrowClicked(true);
+      setTimeout(() => {
+        setStartIndex((prevIndex) => prevIndex - numVisibleFilters);
+        setIsLeftArrowClicked(false);
+      }, 300);
     }
-  };
+  }
 
   const visibleFilters = FilterData.slice(
     startIndex,
@@ -28,19 +38,12 @@ function PlaceFilter() {
 
   return (
     <div className="Filters">
-      <div className="FilterSearch">
-        <label className="FilterSearchLabel">
-          <FontAwesomeIcon
-            icon={["fas", "fa-house"]}
-            className="FilterSearchLogo"
-          />
-          <span className="FilterSearchText">Votre recherche</span>
-        </label>
-      </div>
-
-      <div className="FilterBar scrollable ">
+      <div className="FilterBar scrollable">
         {visibleFilters.map((filter, index) => (
-          <label className="FilterLabel" key={index}>
+          <label
+            className={`FilterLabel ${isLeftArrowClicked || isRightArrowClicked ? 'hidden' : ''}`}
+            key={index}
+          >
             <FontAwesomeIcon
               icon={["fas", filter.icon]}
               className="FilterBarLogo"
@@ -50,7 +53,7 @@ function PlaceFilter() {
         ))}
       </div>
       <div className="FilterArrow">
-      {startIndex > 0 && (
+        {startIndex > 0 && (
           <button className="ArrowButton" onClick={handleLeftArrowClick}>
             <FontAwesomeIcon
               icon={["fas", "fa-chevron-left"]}

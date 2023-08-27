@@ -1,17 +1,24 @@
 
   .ArrowButton{
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     align-items: center;
     margin: auto;
-    height: 100%;
     cursor: pointer;
+    border-radius: 100%;
+    border: solid 1px rgb(235, 235, 235);
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    margin: auto;
   }
 
   .FilterArrow{
-    width: 5%;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    margin: auto;
   }
   
   .FilterBar {
@@ -39,68 +46,96 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
+    cursor: pointer;
+    gap: 12px;
   }
+
+  .Filterbar {
+    transition: 2s;
+  }
+
   
   .FilterBarLogo {
     font-size: 23px;
-    color: #ff384f;
+    color: #e61e4d;
+    opacity: 0.9;
   }
   
+  .FilterLabel:hover .FilterBarLogo{
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .FilterLabel:hover .FilterBarText {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
   .FilterBarText {
     font-size: 14px;
     text-align: center;
+    opacity: 0.7;
+    font-weight: bold;
   }
   
   .Filters {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: auto;
-    width: 100%;
+    max-width: 100%;
+    padding-inline: 40px;
+    padding-top: 25px;
+
   }
   
   .FilterSetting {
-    border: solid 1px gray;
+    border: solid 1px rgb(235, 235, 235);
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
     text-align: center;
     align-items: center;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 8px;
     gap: 10px;
-    width: 5%;
+    background-color: none;
   }
   
-  .FilterSearch {
-    display: flex;
-    width: 10%;
-    justify-content: center;
-  }
-  
+
   .FilterSettingLogo {
     font-size: 18px;
+    background-color: none;
+    opacity: 0.8;
   }
   
   .FilterSettingText {
     font-size: 15px;
-  }
-  
-  .FilterSearchLabel {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .FilterSearchLogo {
-    font-size: 23px;
-    color: gray;
+    opacity: 0.8;
   }
   
   .FilterSearchText {
     font-size: 15px;
   }
   
+  .FilterSetting:hover .FilterSettingText {
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+    
+  .FilterSetting:hover .FilterSettingLogo {
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .FilterLabel {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
   
+  .FilterLabel.hidden {
+    opacity: 0.2;
+  }

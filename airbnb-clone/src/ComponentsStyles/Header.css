@@ -39,17 +39,17 @@ padding-left: 25px;
 }
 
 .RegionButton{
-    font-size: 24px;
-    color: rgb(0, 0, 0);
+    font-size: 20px;
+    color: rgb(167, 167, 167);
 }
 
 .User {
     display: flex;
     justify-content: center;
-    border: solid 1px rgb(63, 63, 63);
     border-radius: 30px;
     gap: 5px;
     padding: 5px 7px 5px 7px;
+    box-shadow: 0px 0px 5px 1px rgb(235, 235, 235);
 }
 
 .UserPicture {
@@ -60,10 +60,13 @@ padding-left: 25px;
     display: flex;
     flex-direction: row;
     height: 80px;
-    width: 100%;
-    justify-content: space-between;
+    max-width: 100%;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: solid 1px gray;
+    border-bottom: solid 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 5px 1px rgb(235, 235, 235);
+    padding-inline: 40px;
+    margin-inline: auto;    
 }
 
 .SearchBar{
@@ -71,7 +74,7 @@ padding-left: 25px;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    border: solid 1px rgb(155, 155, 155);
+    box-shadow: 0px 0px 5px 1px rgb(235, 235, 235);
     border-radius: 30px;
     gap: 25px;
     font-size: 15px;
@@ -89,7 +92,7 @@ padding-left: 25px;
 }
 
 .MagnifyingGlass{
-    background-color: #ff334e;
+    background-color: #e61e4d;
     color: white;
     font-size: 15px;
     margin: 7px 7px 7px 7px;

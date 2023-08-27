@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import validator from 'validator';
   
@@ -66,7 +66,6 @@ function LoginModal({onClose}) {
   return (
     <div>
       <div className="Backdrop" onClick={onClose}></div>
-
       <div className="LoginModal">
         <p className="LoginTitle">Connexion ou inscription</p>
         <div className="LoginForm">
