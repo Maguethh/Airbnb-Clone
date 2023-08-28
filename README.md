@@ -24,7 +24,7 @@ MONGODB_CONNECTION_STRING=
 TOKEN_KEY= }
 Complétez le fichier avec les informations suivantes, (string de connexion MongoDB et clé JWT)
 
-Lancez le serveur backend en utilisant la commande nodemon app.js.
+Lancez le serveur backend en utilisant la commande node app.js.
 Vous voilà prêt à explorer l'application de location d'appartements ! N'hésitez pas à contribuer, ouvrez des issues pour des fonctionnalités ou des problèmes, et partagez vos retours.
 
 Note importante :
