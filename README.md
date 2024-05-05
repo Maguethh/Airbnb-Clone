@@ -1,38 +1,35 @@
-Projet de Location d'Appartements Inspiré d'Airbnb
+# Airbnb Clone
 
-Bienvenue dans mon projet personnel de développement web ! Ce projet vise à créer une application de location d'appartements, s'inspirant du célèbre site Airbnb. Je développe à la fois le frontend et le backend en utilisant des technologies modernes telles que React, Node.js et MongoDB.
+## Description
+This project is a partial clone of the Airbnb platform, built using React for the frontend, Node.js for the backend, and MongoDB for the database. It aims to replicate some features of the original platform, such as property search and booking, user management, etc.
 
-Instructions de Lancement :
+**Note: This project is still under development and is not considered complete.**
 
-Frontend
-Ouvrez le terminal et accédez au répertoire du projet.
-Accédez au répertoire frontend avec la commande cd frontend.
-Installez les dépendances en exécutant npm install.
-Lancez l'application frontend en utilisant la commande npm run start.
-Ouvrez votre navigateur et accédez à http://localhost:3000.
+## Features
+- User-friendly UI based on React
+- Secure and scalable backend with Node.js
+- Integration with MongoDB for data storage
+- Property search functionality
+- User authentication
 
-Backend
-Dans le terminal, retournez au répertoire principal du projet (si vous êtes toujours dans le répertoire frontend, utilisez la commande cd ..).
-Accédez au répertoire backend avec la commande cd backend.
-Installez les dépendances en exécutant npm install.
+## Installation
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies by running `npm install` both in the client and server folders.
 
-Dotenv
-Créez un fichier .env dans le backend.
-{ # Votre string de connection MongoDB
-MONGODB_CONNECTION_STRING=
-#Votre clé JWT
-TOKEN_KEY= }
-Complétez le fichier avec les informations suivantes, (string de connexion MongoDB et clé JWT)
+## Configuration
+- Ensure you have an appropriate development environment to run both the frontend and backend.
+- Create a `.env` file at the root of the server folder to configure your environment variables, including MongoDB connection details.
 
-Lancez le serveur backend en utilisant la commande node app.js.
-Vous voilà prêt à explorer l'application de location d'appartements ! N'hésitez pas à contribuer, ouvrez des issues pour des fonctionnalités ou des problèmes, et partagez vos retours.
+## Usage
+- To start the frontend, run `npm start` in the client folder.
+- To start the server, run `npm start` in the server folder.
 
-Note importante :
+## Contributing
+This project is open to contributions. Feel free to open an issue to report a bug or propose a new feature. Pull requests are welcome.
 
-Merci de l'intérêt que vous portez à mon projet ! Cependant, veuillez noter que ce projet est encore en développement et est sujet à des changements fréquents. Le code actuel ne représente pas la version finale et peut contenir des bugs ou des fonctionnalités incomplètes.
+## License
+This project is licensed under the MIT License. Please see the `LICENSE` file for more information.
 
-Je travaille activement pour améliorer et optimiser l'application, en ajoutant de nouvelles fonctionnalités et en corrigeant les problèmes identifiés. Les technologies, les dépendances et l'architecture du projet sont susceptibles de changer au fil du temps pour mieux répondre aux besoins.
-
-N'hésitez pas à consulter régulièrement les mises à jour du projet et à contribuer si vous le souhaitez. Vos retours, suggestions et contributions sont les bienvenus pour faire évoluer ce projet vers une version plus aboutie.
-
-Merci pour votre compréhension et votre soutien pendant cette phase de développement.
+## Note
+This project is currently under development and is not considered complete. Additional features may be added in the future. Your understanding and support are appreciated.
