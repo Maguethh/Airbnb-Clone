@@ -28,8 +28,5 @@ This project is a partial clone of the Airbnb platform, built using React for th
 ## Contributing
 This project is open to contributions. Feel free to open an issue to report a bug or propose a new feature. Pull requests are welcome.
 
-## License
-This project is licensed under the MIT License. Please see the `LICENSE` file for more information.
-
 ## Note
 This project is currently under development and is not considered complete. Additional features may be added in the future. Your understanding and support are appreciated.
